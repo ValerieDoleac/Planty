@@ -38,3 +38,20 @@
 			<main id="main" class="site-main clr"<?php oceanwp_schema_markup( 'main' ); ?> role="main">
 
 				<?php do_action( 'ocean_page_header' ); ?>
+
+
+<?php
+// Menu principal (primary)
+//wp_nav_menu(array(
+//    'theme_location' => 'primary',
+//    'menu_class'     => 'menu-primary',
+//));
+
+// Menu mobile (mobile_menu)
+//wp_nav_menu(array(
+//    'theme_location' => 'mobile_menu',
+//    'menu_class'     => 'menu-mobile',
+//));
+
+?>
+

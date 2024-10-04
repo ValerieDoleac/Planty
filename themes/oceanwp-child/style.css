@@ -10,4 +10,280 @@ Version: 3.5.9.1723215913
 Updated: 2024-08-09 17:05:13
 
 */
+li.commander a{
+    color:white !important;
+}
+
+li.commander:hover a{
+    color:white !important;
+}
+
+#menu-principal {
+    display:flex;
+}
+
+#menu-principal-1{
+    display: flex;
+    flex-direction: column;
+}
+
+li.commander{
+    order:3;
+}
+
+#menu-principal li.commander a.menu-link {
+    color:white !important;
+}
+
+.lien-admin{
+    font-size: 10px;
+}
+
+.custom-logo{
+    margin:20px;
+}
+
+/* page nous rencontrer */
+
+.branche {
+    position: absolute;
+    bottom: -63px;
+}
+
+.renseignement .wpcf7-form-control-wrap input, .renseignement .wpcf7-form-control-wrap textarea {
+    background-color: white;
+    color: #000000;            /* Couleur du texte noir */
+    width: 100%;               /* Assure que les champs prennent la largeur du conteneur */
+    box-sizing: border-box;    /* Inclut le padding dans la taille totale */
+    margin-bottom: 20px;
+}
+
+.renseignement label {
+    color: #000000; /* Couleur du texte en noir */
+    font-size: 14px;
+}
+
+
+.form {
+    position: relative; /*  pour que l'image se place par rapport à lui */
+    z-index: 1; /*  le formulaire est au-dessus de l'image */
+}
+
+.houx {
+    position: absolute;
+    left: 300px;  
+    bottom: -100px; /* Ajustez cette valeur pour déplacer l'image vers le bas et à moitié cachée */
+    z-index: 0; /* l'image est derrière le formulaire */
+    width: auto; /* taille réelle de l'image */
+    height: auto;
+}
+
+
+
+/* Page commander */
+
+/* Pour les champs de quantité */
+
+
+.quantites {
+    display: flex;
+    justify-content: space-around;
+}
+
+.quantites span {
+    margin-right: 20px;
+    display: inline-block;
+    background-color: white;
+}
+
+.trait-haut{
+    border-top: 2px solid white; /* Crée un trait blanc */
+    margin-bottom: 20px; /* Espace entre le trait et le contenu */
+}
+
+
+
+/* Pour la section du formulaire */
+
+h2{
+	color:white;
+	font-size:30px;
+}
+
+.coordonners {
+    display: flex;
+	justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.coordonners .info,
+.coordonners .livraison {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.coordonners .info .wpcf7-form-control,
+.coordonners .livraison .wpcf7-form-control{
+    background-color: white;
+}
+
+input[type="text"], input[type="email"], textarea {
+    height: 50px; /* Ajustez la hauteur selon vos besoins */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur du champ */
+    font-size: 16px; /* Pour agrandir le texte à l'intérieur si nécessaire */
+    border-radius: 5px; 
+    box-sizing: border-box; /* Pour que padding et border soient inclus dans la taille totale */
+}
+
+.coordonners .info {
+    border-right: 1px solid white; /* trait blanc à droite */
+    padding-right: 35px; /* espace entre le trait et le contenu */
+}
+
+.coordonners .livraison {
+    padding-left: 20px; /* espace entre le trait et le contenu du formulaire de droite */
+}
+
+/* Ajout d'un trait blanc entre les boutons radio et la section informations */
+.formulaire-trait {
+    border-top: 2px solid white; /* Crée une ligne blanche */
+    margin-top: 30px; /* Ajoutez un espacement au-dessus du trait */
+    margin-bottom: 30px; /* Ajoutez un espacement en dessous du trait */
+    width: 100%; /*  largeur du trait */
+}
+
+.wpcf7-form-control.wpcf7-submit.has-spinner{
+    background-color: #DC9F96; /*bouton*/
+    margin-top: 20px !important;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-transform: lowercase;
+}
+
+.wpcf7-form-control.wpcf7-submit.has-spinner:hover{
+    background-color: #C02E44;
+}
+
+
+label{
+	color:white;
+	font-size:20px;
+}
+
+
+/* Pour les champs de texte */
+.wpcf7-form-control-wrap span {
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin-top: 5px;
+}
+
+
+/* Ajustement des champs de texte */
+.coordonners label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+a:focus{
+    outline: solid 0px !important;
+}
+
+.menu{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+
+    /* Version mobile : largeur inférieure à 768px */
+@media (max-width: 768px) {
+
+    .renseignement {
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+
+    /* Styles supplémentaires */
+    li.commander a, li.admin a {
+        color: white !important;
+    }
+
+    li.commander:hover a, li.admin:hover a {
+        color: white !important;
+    }
+
+    .oceanwp-text{
+        margin-right: 20px;
+    }
+
+    /* Réduire la taille des sections du formulaire pour qu'elles soient empilées */
+    .coordonners {
+        display: block;
+        margin:  30px; /* Réduire les marges */
+    }
+
+    /* Les sections info et livraison prennent toute la largeur en mobile */
+    .coordonners .info,
+    .coordonners .livraison {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px; /* Ajouter un espacement entre les deux sections */
+        border-right: none; /* Enlever la bordure droite en version mobile */
+        padding: 0; /* Enlever les marges internes */
+    }
+
+    /* Ajuster la largeur des champs de texte */
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        box-sizing: border-box; /* S'assurer que padding et border sont inclus dans la largeur */
+    }
+
+    /* Bouton commander centré et plus grand */
+    .wpcf7-form-control.wpcf7-submit.has-spinner {
+        border-radius: 5px;
+        font-size: 15px; /* Agrandir le texte du bouton */
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    /* Les labels prennent toute la largeur en mobile */
+    label {
+        font-size: 15px; /* Taille de police réduite pour les labels */
+    }
+
+    /* Alignement des champs de quantité */
+    .quantites {
+        flex-direction: row; /* Les champs de quantité s'empilent */
+        align-items: space-between; /* Les champs de quantité sont alignés entre eux */
+    }
+
+    .quantites span {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .wp-block-uagb-image-gallery.uagb-block-70a6be8b{
+        display: grid;
+        grid-template-columns: 1fr; /* Une seule colonne pour mobile */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .wpcf7-form-control.wpcf7-submit.has-spinner{
+        background-color: #DC9F96; /*bouton*/
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .wpcf7-form-control.wpcf7-submit.has-spinner:hover{
+        background-color: #C02E44;
+    }
+}
+
+
+
 
